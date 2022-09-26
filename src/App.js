@@ -1,65 +1,17 @@
+import Sidebar from "./components/Sidebar/Sidebar";
 import Topbar from "./components/Topbar/Topbar";
+import './App.css'
+import Home from "./pages/Home/Home";
 
 
 function App() {
   return (
     <div>
       <Topbar />
-      test <br />
-      test <br/>
-      test <br/>
-      test <br/>
-      test <br/>
-      test <br/>
-      test <br/>
-      test <br/>
-      test <br/>
-      test <br/>
-      test <br/>
-      test <br/>
-      test <br/>
-      test <br/>
-      test <br/>
-      test <br/>
-      test <br/>
-      test <br/>
-      test <br/>
-      test <br/>
-      test <br/>
-      test <br/>
-      test <br/>
-
-      test <br/>
-
-      test <br/>
-
-
-
-      test <br/>test <br/>
-
-      test <br/>
-      test <br/>
-      test <br/>
-      test <br/>
-      test <br/>
-      test <br />
-      test <br/>
-      test <br/>
-      test <br/>
-      test <br/>
-      test <br/>
-      test <br/>
-      test <br/>
-      test <br/>
-      test <br/>
-      test <br/>
-      test <br/>
-      test <br/>
-      test <br/>
-      test <br/>
-      test <br/>
-      test <br/>
-      test <br/>
+      <div className="container">
+        <Sidebar />
+        <Home />
+        </div>
     </div>
   );
 }
