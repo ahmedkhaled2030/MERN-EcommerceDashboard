@@ -11,6 +11,8 @@ import DynamicFeed from "@mui/icons-material/DynamicFeed";
 import ChatBubbleOutline from "@mui/icons-material/ChatBubbleOutline";
 import WorkOutline from "@mui/icons-material/WorkOutline";
 import Report from "@mui/icons-material/Report";
+import SupervisedUserCircle from "@mui/icons-material/SupervisedUserCircle";
+import LocalMall from "@mui/icons-material/LocalMall";
 import { Link } from "react-router-dom";
 
 export default function Sidebar() {
@@ -27,77 +29,68 @@ export default function Sidebar() {
               </li>
             </Link>
 
-            <li className="sidebarListItem">
+            {/* <li className="sidebarListItem">
               <Timeline className="sidebarIcon" />
-              Analytics
+              Orders
             </li>
             <li className="sidebarListItem">
               <TrendingUp className="sidebarIcon" />
-              Sales
-            </li>
+              Transactions
+            </li> */}
           </ul>
         </div>
 
         <div className="sidebarMenu">
-          <h3 className="sidebarTitle">Quick Menu</h3>
+          <h3 className="sidebarTitle">Users</h3>
           <ul className="sidebarList">
             <Link className="link" to="/users">
               <li className="sidebarListItem">
-                <PermIdentity className="sidebarIcon" />
-                Users
+                <SupervisedUserCircle className="sidebarIcon" />
+                Users List
               </li>
             </Link>
+            <Link className="link" to="/newUser">
+              <li className="sidebarListItem">
+                <PermIdentity className="sidebarIcon" />
+                Add User
+              </li>
+            </Link>
+          </ul>
+        </div>
+
+        <div className="sidebarMenu">
+          <h3 className="sidebarTitle">Products</h3>
+          <ul className="sidebarList">
             <Link className="link" to="/products">
               <li className="sidebarListItem">
-                <Storefront className="sidebarIcon" />
-                Products
+                <DynamicFeed className="sidebarIcon" />
+                ProductsList
               </li>
             </Link>
+            <Link className="link" to="/newProduct">
             <li className="sidebarListItem">
-              <AttachMoney className="sidebarIcon" />
-              Transactions
-            </li>
-
-            <li className="sidebarListItem">
-              <BarChart className="sidebarIcon" />
-              Reports
-            </li>
+              <LocalMall className="sidebarIcon" />
+              AddProduct
+              </li>
+              </Link>
           </ul>
         </div>
 
         <div className="sidebarMenu">
-          <h3 className="sidebarTitle">Notifications</h3>
+          <h3 className="sidebarTitle">Orders</h3>
           <ul className="sidebarList">
-            <li className="sidebarListItem">
-              <MailOutline className="sidebarIcon" />
-              Mail
-            </li>
-            <li className="sidebarListItem">
-              <DynamicFeed className="sidebarIcon" />
-              Feedback
-            </li>
-            <li className="sidebarListItem">
-              <ChatBubbleOutline className="sidebarIcon" />
-              Messages
-            </li>
-          </ul>
-        </div>
-
-        <div className="sidebarMenu">
-          <h3 className="sidebarTitle">Staff</h3>
-          <ul className="sidebarList">
-            <li className="sidebarListItem">
+            {/* <li className="sidebarListItem">
               <WorkOutline className="sidebarIcon" />
               Manage
-            </li>
+            </li> */}
             <li className="sidebarListItem">
               <Timeline className="sidebarIcon" />
-              Analytics
+              Orders List
             </li>
-            <li className="sidebarListItem">
+            {/* <li className="sidebarListItem">
               <Report className="sidebarIcon" />
               Reports
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
