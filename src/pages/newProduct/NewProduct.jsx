@@ -125,3 +125,11 @@ export default function NewProduct() {
     </div>
   );
 }
+
+// <MenuItem value={10}>Cairo</MenuItem>
+//                 <MenuItem value={10}>Alexandria</MenuItem>
+//                 <MenuItem value={10}>Giza</MenuItem>
+//                 <MenuItem value={10}>Qalyubia</MenuItem>
+//                 <MenuItem value={10}>Qena</MenuItem>
+//                 <MenuItem value={10}>Aswan</MenuItem>
+//                 <MenuItem value={10}>Portsaid</MenuItem>
